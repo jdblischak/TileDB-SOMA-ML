@@ -53,6 +53,8 @@ Changelog = "https://github.com/TileDB-Inc/TileDB-SOMA-ML/blob/main/CHANGELOG.md
 [tool.setuptools.dynamic]
 version = {attr = "tiledbsoma_ml.__version__"}
 
+[tool.setuptools_scm]
+
 [tool.setuptools.package-data]
 "tiledbsoma_ml" = ["py.typed"]
 

@@ -76,4 +76,5 @@ jobs:
       - name: Do build
         run: |
           pip install --upgrade build pip wheel setuptools setuptools-scm
+          python -m setuptools_scm
           python -m build .
