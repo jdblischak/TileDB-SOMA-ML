@@ -9,7 +9,15 @@ from .dataloader import experiment_dataloader
 from .datapipe import ExperimentAxisQueryIterDataPipe
 from .dataset import ExperimentAxisQueryIterableDataset
 
-__version__ = "0.1.0-dev"
+
+from importlib.metadata import version, PackageNotFoundError
+
+try:
+    __version__ = version("tiledbsoma_ml")
+except PackageNotFoundError:
+    # package is not installed
+    pass
+
 
 __all__ = [
     "ExperimentAxisQueryIterDataPipe",
