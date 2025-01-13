@@ -13,7 +13,7 @@ from .dataset import ExperimentAxisQueryIterableDataset
 from importlib.metadata import version, PackageNotFoundError
 
 try:
-    __version__ = version("tiledbsoma_ml")
+    __version__ = version("tiledbsoma-ml")
 except PackageNotFoundError:
     # package is not installed
     pass
