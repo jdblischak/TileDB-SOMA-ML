@@ -78,3 +78,5 @@ jobs:
           pip install --upgrade build pip wheel setuptools setuptools-scm
           python -m setuptools_scm
           python -m build .
+          pip install -v dist/tiledbsoma_ml-*.whl
+          python -c "import tiledbsoma_ml as soma_ml; print(soma_ml.__version__)"
